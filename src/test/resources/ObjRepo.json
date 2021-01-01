@@ -1,0 +1,53 @@
+{
+  "createaccount":
+  {
+    "emailaddress":"id;email_create",
+    "createaccountbtn": "name;SubmitCreate",
+    "radiobox": "id;id_gender1",
+    "firstname": "id;customer_firstname",
+    "lastname": "id;customer_lastname",
+    "dateofbirthday": "id;days",
+    "dateofbirthmonth":"id;months",
+    "dateofbirthyear": "id;years",
+    "firstnamefield": "id;firstname",
+    "lastnamefield": "id;lastname",
+    "companyfield": "id;company",
+    "address1":"id;address1",
+    "address2": "id;address2",
+    "city": "id;city",
+    "state": "id;id_state",
+    "postalcode": "id;postcode",
+    "additionalinfo": "id;other",
+    "country": "id;id_country",
+    "homeno":"id;phone",
+    "mobileno": "id;phone_mobile",
+    "addressalias": "id;alias",
+    "registerbtn": "id;submitAccount",
+    "alreadyregisteremail": "xpath;.//*[@id='create_account_error']//li",
+    "dangeralert": "xpath;.//*[@class='alert alert-danger']"
+
+  },
+  "loginpage": {
+    "email":"id;email",
+    "password": "id;passwd",
+    "signinbtn": "id;SubmitLogin",
+    "failedauth": "xpath;//li[contains(text(),'Authentication failed.')]",
+    "withoutcreds": "xpath;//li[contains(text(),'An email address required.')]"
+  },
+  "homepage": {
+    "signin":"xpath;//a[contains(text(),'Sign in')]",
+    "signout": "link;Sign out"
+  },
+  "purchase":{
+    "tshirts": "xpath;//a[@title='T-shirts']",
+    "women": "xpath;//a[@title='Women']",
+    "shortsleeve": "xpath;//*[contains(text(),'Faded Short Sleeve T-shirts')]",
+    "addtocart": "xpath;//span[contains(text(),'Add to cart')]",
+    "proceedtocheckout":"xpath;//span[contains(text(),'Proceed to checkout')]",
+    "paymentproceedtocheckout":"xpath;(//span[contains(text(),'Proceed to checkout')])[2]",
+    "termsofservice": "xpath;//input[@id='cgv']",
+    "paymentmethod": "xpath;.//*[@title='Pay by bank wire']",
+    "confirmorder": "xpath;//span[contains(text(),'I confirm my order')]",
+    "completeorder": "xpath;//strong[contains(text(),'Your order on My Store is complete.')]"
+  }
+}

@@ -1,0 +1,11 @@
+# zap-java-api
+
+# mvn install:install-file -Dfile={Path}\libs\zap-api-2.4-v6.jar -DgroupId=net.continuumsecurity -DartifactId=zap-java-api -Dversion=2.4.2  -Dpackaging=jar -DgeneratePom=true
+
+# zaproxy-client-api
+
+# mvn install:install-file -Dfile={Path}\libs\proxy-2.4.2-SNAPSHOT.jar -DgroupId=org.owasp -DartifactId=zaproxy-client-api -Dversion=2.4-6  -Dpackaging=jar -DgeneratePom=true
+
+# harlib-1.1.1
+
+# mvn install:install-file -Dfile={Path}\libs\harlib-1.1.1.jar -DgroupId=edu.umass.cs.benchlab -DartifactId=harlib -Dversion=1.1.1  -Dpackaging=jar -DgeneratePom=true

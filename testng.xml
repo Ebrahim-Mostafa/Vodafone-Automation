@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Vodafone Automation Task" parallel="false" thread-count="3">
+
+    <listeners>
+        <listener class-name="Analyzer.RetryTransformer"/>
+        <listener class-name="Listeners.TestAllureListener"/>
+        <listener class-name="Listeners.TestScreenCaptureListener"/>
+    </listeners>
+
+    <parameter name="Browser" value="Chrome"/>
+    <parameter name="ENV" value="TEST"/>
+    <parameter name="URL" value="http://automationpractice.com/index.php"/>
+
+    <test name="Registration Test">
+        <classes>
+            <class name="tests.RegistrationTest"/>
+        </classes>
+    </test>
+
+    <test name="Login Test">
+        <classes>
+            <class name="tests.LoginTest"></class>
+        </classes>
+    </test>
+
+    <test name="Checkout Test">
+        <classes>
+            <class name="tests.CheckoutTest"></class>
+        </classes>
+    </test>
+
+    <test name="Get All Posts">
+        <classes>
+            <class name="RestAssured.GetAllPosts"></class>
+        </classes>
+    </test>
+
+    <test name="Get Post By ID">
+        <classes>
+            <class name="RestAssured.GetPostByID"></class>
+        </classes>
+    </test>
+
+    <test name="Create Post">
+        <classes>
+            <class name="RestAssured.CreatePost"></class>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->

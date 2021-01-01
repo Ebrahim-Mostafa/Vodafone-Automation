@@ -1,0 +1,5 @@
+# mvn install:install-file -Dfile={Path}/monte-screen-recorder-0.7.7.0.jar -DgroupId=com.github.stephenc.monte -DartifactId=monte-screen-reco
+rder -Dversion=0.7.7.0  -Dpackaging=jar -DgeneratePom=true
+
+# mvn install:install-file -Dfile=D:\healthi-test-automation\libs\monte-screen-recorder-0.7.7.0.jar -DgroupId=com.github.stephenc.monte -DartifactId=monte-
+screen-recorder -Dversion=0.7.7.0  -Dpackaging=jar -DgeneratePom=true

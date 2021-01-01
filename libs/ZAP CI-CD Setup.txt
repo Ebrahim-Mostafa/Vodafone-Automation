@@ -1,0 +1,20 @@
+1- Install or pull docker image -
+
+docker pull owasp/zap2docker-stable 
+
+2- You can start the ZAP in headless mode with following command -
+
+docker run -u zap -p 8080:8080 -i owasp/zap2docker-stable zap.sh -daemon -host 0.0.0.0 -port 8080 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true -config api.disablekey=true
+
+3- Run your Selenium tests independently but within selenium tests configure the proxy to hit port 8080 (or whichever you are using).
+
+4- The following command will generate report in the container -
+
+docker exec $container_Id zap-cli report -o vulnerability.html -f HTML
+
+5- you can copy this report anywhere. Then stop the container and remove it.
+
+
+Reference:
+
+https://stackoverflow.com/questions/63306901/selenium-script-execution-scanning-by-owasp-zap-docker
