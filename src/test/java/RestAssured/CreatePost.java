@@ -1,5 +1,7 @@
 package RestAssured;
 
+import Recorders.ATUTestRecord;
+import atu.testrecorder.exceptions.ATUTestRecorderException;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -10,7 +12,7 @@ import org.testng.annotations.Test;
 public class CreatePost {
 
     @Test(priority = 11)
-    public void createPostAPITest(){
+    public void createPostAPITest() throws ATUTestRecorderException {
 
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
         RequestSpecification request = RestAssured.given().log().all();
@@ -33,5 +35,7 @@ public class CreatePost {
         int userId = js.get("userId");
         System.out.println("userId is"+ userId);
         Assert.assertNotNull(userId);
+
+        ATUTestRecord.stopScreenRecorder();
     }
 }

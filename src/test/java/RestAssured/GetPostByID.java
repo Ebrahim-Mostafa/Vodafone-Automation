@@ -1,5 +1,7 @@
 package RestAssured;
 
+import Recorders.ATUTestRecord;
+import atu.testrecorder.exceptions.ATUTestRecorderException;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -9,7 +11,7 @@ import org.testng.annotations.Test;
 public class GetPostByID {
 
     @Test(priority = 10)
-    public void getPostByIDTest(){
+    public void getPostByIDTest() {
 
         RestAssured.baseURI="https://jsonplaceholder.typicode.com";
         RequestSpecification request = RestAssured.given().log().all(); //log is used to get more info

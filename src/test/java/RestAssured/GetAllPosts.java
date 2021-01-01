@@ -1,5 +1,7 @@
 package RestAssured;
 
+import Recorders.ATUTestRecord;
+import atu.testrecorder.exceptions.ATUTestRecorderException;
 import org.apache.http.HttpEntity;
 import org.apache.http.ParseException;
 import org.apache.http.client.ClientProtocolException;
@@ -16,10 +18,11 @@ import java.io.IOException;
 public class GetAllPosts {
 
     @Test(priority = 9)
-    public void goRestGetAllPostsTest(){
+    public void goRestGetAllPostsTest() throws ATUTestRecorderException {
+
+        ATUTestRecord.startScreenRecorder("API Demo");
 
         CloseableHttpResponse response = null;
-
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
 
         //1. create a request with url
