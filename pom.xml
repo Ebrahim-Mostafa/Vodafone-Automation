@@ -96,6 +96,7 @@
       <version>2.13.2</version>
       <scope>test</scope>
     </dependency>
+
     <!--        https://github.com/iriusrisk/zap-webdriver/tree/master/libs-->
     <dependency>
       <groupId>net.continuumsecurity</groupId>
@@ -113,6 +114,13 @@
       <groupId>edu.umass.cs.benchlab</groupId>
       <artifactId>harlib</artifactId>
       <version>1.1.1</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.zaproxy/zap -->
+    <dependency>
+      <groupId>org.zaproxy</groupId>
+      <artifactId>zap</artifactId>
+      <version>2.9.0</version>
     </dependency>
 
     <dependency>

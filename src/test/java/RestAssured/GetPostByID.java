@@ -1,7 +1,5 @@
 package RestAssured;
 
-import Recorders.ATUTestRecord;
-import atu.testrecorder.exceptions.ATUTestRecorderException;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;

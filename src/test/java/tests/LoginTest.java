@@ -17,7 +17,7 @@ public class LoginTest extends BaseTest {
         homePage=new HomePage();
         homePage.clickOnSignin();
         loginPage=new LoginPage();
-        loginPage.loginIntoAccount("xokoka2392@aranelab.com","123456");
+        loginPage.loginIntoAccount("tiwopi6827@aomrock.com","123456");
         softAssert.assertTrue(loginPage.failedLogin().contains("Authentication failed."));
     }
 
@@ -47,7 +47,7 @@ public class LoginTest extends BaseTest {
         homePage=new HomePage();
         homePage.clickOnSignin();
         loginPage=new LoginPage();
-        loginPage.loginIntoAccount("keliw97550@28woman.com","12345");//xatac43543@aranelab.com"
+        loginPage.loginIntoAccount("tiwopi6827@aomrock.com","12345");//xatac43543@aranelab.com"
         String expectedURL = "http://automationpractice.com/index.php?controller=my-account";
         String expectedTitle ="My account - My Store" ;
         softAssert.assertEquals(driver.getCurrentUrl(),expectedURL);

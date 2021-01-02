@@ -20,8 +20,8 @@ import static Utilities.Utils.*;
 
 public class ZAPScanner {
 
-    private final static String BASE_URL = "https://healthi-test.cegedim.com/login";
-    private final static String LOGOUT_URL = "https://healthi-test.cegedim.com/stk-cas-web/logout";
+    private final static String BASE_URL = "http://automationpractice.com/index.php";
+    private final static String LOGOUT_URL = "http://automationpractice.com/index.php?controller=authentication&back";
     public  final static String ZAP_PROXYHOST = "localhost";
     public  final static int ZAP_PROXYPORT = 8080;
     private final static String ZAP_APIKEY = null;

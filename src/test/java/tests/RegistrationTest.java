@@ -66,12 +66,12 @@ public class RegistrationTest extends BaseTest {
         homePage=new HomePage();
         homePage.clickOnSignin();
         loginPage=new LoginPage();
-        loginPage.createAccount("keliw97550@28woman.com");
+        loginPage.createAccount("tiwopi6827@aomrock.com");
         registerationpage = new RegisterationPage();
         registerationpage.setCustomerTitleMr();
         registerationpage.setCustomerFirstName("Ebrahim");
         registerationpage.setCustomerLastName("Mostafa");
-        registerationpage.setCustomerEmailField("keliw97550@28woman.com");
+        registerationpage.setCustomerEmailField("tiwopi6827@aomrock.com");
         registerationpage.setCustomerPasswordField("12345");
         registerationpage.selectCustomerDateOfBirthDay("6");
         registerationpage.selectCustomerDateOfBirthMonth("9");
