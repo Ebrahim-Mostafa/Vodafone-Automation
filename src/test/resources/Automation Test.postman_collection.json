@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Automation Test",
+		"_postman_id": "9f17fbe0-c67c-32b8-9c8f-6f2cb0d2f9e5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all posts",
+			"request": {
+				"url": "https://jsonplaceholder.typicode.com/posts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get post by {id}",
+			"request": {
+				"url": "https://jsonplaceholder.typicode.com/posts/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create a post",
+			"request": {
+				"url": "https://jsonplaceholder.typicode.com/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"title\": \"foo\",\r\n    \"body\": \"bar\",\r\n    \"userId\": 1\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
